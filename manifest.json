@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "What's Not Happening",
+  "version": "0.1.0",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["http://*.twitter.com/*", "https://*.twitter.com/*"],
+      "js": ["script.js"]
+    }
+  ]
+}
